@@ -12,5 +12,7 @@ namespace VerticalSlicingSimpleApp.Common.Enums
         InstructorNotFound = 201,
         [Description("Validation errors")]
         ValidationErrors = 1,
+        [Description("Author name already exists")]
+        AuthorNameExist = 30001,
     }
 }

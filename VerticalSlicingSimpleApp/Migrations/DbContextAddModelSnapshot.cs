@@ -9,7 +9,7 @@ using VerticalSlicingSimpleApp.Data;
 
 namespace VerticalSlicingSimpleApp.Migrations
 {
-    [DbContext(typeof(DbContextAdd))]
+    [DbContext(typeof(DbContextApp))]
     partial class DbContextAddModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

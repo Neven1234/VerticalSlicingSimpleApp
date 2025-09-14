@@ -17,10 +17,10 @@ namespace VerticalSlicingSimpleApp.Featuers.Author.GetAllAuthors.Queries
     ):IRequest<RequestResult<GetAllAuthorResonseViewModel>>;
     public class GetAllAuthorRequestQueryHandler : RequestHandlerBase<GetAllAuthorQuery, RequestResult<GetAllAuthorResonseViewModel>>
     {
-        private readonly DbContextAdd _dbContextAdd;
+        private readonly DbContextApp _dbContextAdd;
         readonly DbSet<AuthorModel> _dbSet;
         public GetAllAuthorRequestQueryHandler(RequestHandlerBaseParameters parameters,
-            DbContextAdd dbContextAdd) : base(parameters)
+            DbContextApp dbContextAdd) : base(parameters)
         {
             this._dbContextAdd = dbContextAdd;
             this._dbSet = _dbContextAdd.Set<AuthorModel>();

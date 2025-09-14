@@ -10,7 +10,7 @@ using VerticalSlicingSimpleApp.Data;
 
 namespace VerticalSlicingSimpleApp.Migrations
 {
-    [DbContext(typeof(DbContextAdd))]
+    [DbContext(typeof(DbContextApp))]
     [Migration("20250913133946_InitialCreate")]
     partial class InitialCreate
     {

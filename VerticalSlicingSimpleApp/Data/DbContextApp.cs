@@ -6,10 +6,10 @@ using DbContext = Microsoft.EntityFrameworkCore.DbContext;
 
 namespace VerticalSlicingSimpleApp.Data
 {
-    public class DbContextAdd:DbContext
+    public class DbContextApp:DbContext
     {
       
-        public DbContextAdd(DbContextOptions<DbContextAdd> options)
+        public DbContextApp(DbContextOptions<DbContextApp> options)
 : base(options)
         {
         }

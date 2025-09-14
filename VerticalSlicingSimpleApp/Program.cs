@@ -24,7 +24,7 @@ builder.Services.AddValidatorsFromAssemblyContaining<GetAllAuthorsRequestViewMod
 builder.Services.AddScoped(typeof(EndPointBaseParameters<>));
 
 // DbContext (you already have this)
-builder.Services.AddDbContext<DbContextAdd>(options =>
+builder.Services.AddDbContext<DbContextApp>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("connString")));
 // Add Request Handler Base
 builder.Services.AddScoped<RequestHandlerBaseParameters>();
